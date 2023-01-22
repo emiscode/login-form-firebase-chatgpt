@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Authentication Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form>
+        <h1>Login</h1>
+        <label for="txtEmail">Email:</label>
+        <input type="email" id="txtEmail" placeholder="Enter Email" />
+        <label for="txtPassword">Password:</label>
+        <input type="password" id="txtPassword" placeholder="Enter Password" />
+        <button id="btnLogin">Login</button>
+        <button id="btnSignUp">Sign Up</button>
+        <button id="btnLogout" class="btn-logout hide">Logout</button>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

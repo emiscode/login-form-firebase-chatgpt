@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <p id="user">user</p>
+  </body>
+  <script>
+    const token = getCookie("google_token");
+
+    document.getElementById("user").innerText = token;
+
+    function getCookie(name) {
+      const cookies = document.cookie.split(";");
+      const index = cookies.findIndex((c) => c.trim().startsWith(name));
+      return cookies[index].trim().split("=")[1];
+    }
+  </script>
+</html>
